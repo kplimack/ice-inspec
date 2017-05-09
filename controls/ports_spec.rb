@@ -1,9 +1,9 @@
 
-control 'ice' do
+control 'opennebula' do
   impact 1.0
   title 'is it listening'
-  desc 'port 80 listening'
-  describe port(80) do
+  desc 'port 9869 listening'
+  describe port(9869) do
     it { be_listening }
   end
 end
