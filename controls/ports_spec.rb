@@ -1,9 +1,10 @@
 
 control 'opennebula' do
   impact 1.0
-  title 'is it listening'
-  desc 'port 9869 listening'
-  describe port(9869) do
-    it { should be_listening }
+  title 'check node procs'
+  desc 'procs are running'
+
+  describe command('pgrep libvirtd') do
+    its('stdout') { should match (/[0-9]/) }
   end
 end
