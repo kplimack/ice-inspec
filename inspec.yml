@@ -1,0 +1,10 @@
+name: ice-inspec
+title: ice-inspec
+maintainer: sendgrid
+copyright: sendgrid
+copyright_email: operations@sendgrid.com
+license: All Rights Reserved
+summary: check the sendgrid_ice setup
+version: 0.0.1
+supports:
+  - os-family: linux
